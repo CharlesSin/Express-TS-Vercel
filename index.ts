@@ -10,6 +10,10 @@ app.get("/", (req: Request, res: Response) => {
   res.send("Express + TypeScript Server");
 });
 
+app.get("/user", (req: Request, res: Response) => {
+  res.status(201).json({ msg: "Done", user: "Charles" });
+});
+
 app.listen(port, () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
 });
