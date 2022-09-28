@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist/ && npx tsc",
-    "start": "npm run build && node dist/index.js",
+    "build": "rimraf output/ && npx tsc",
+    "start": "npm run build && node output/index.js",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
   },
   "keywords": [],
